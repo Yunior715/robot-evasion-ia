@@ -1,0 +1,8 @@
+type: simulation
+worlds:
+  - worlds/robot_mundo.wbt
+description: Robot con evasion de obstaculos
+tags:
+  - robot
+  - e-puck
+  - obstacle-avoidance
