@@ -1,0 +1,40 @@
+#VRML_SIM R2023a utf8
+
+WorldInfo {
+  basicTimeStep 32
+  title "Robot Evasion de Obstaculos"
+}
+
+Viewpoint {
+  orientation -0.5773502691896258 0.5773502691896258 0.5773502691896258 2.0944
+  position 0 0 1
+}
+
+Background {
+  skyColor [
+    0.15 0.45 0.75
+  ]
+}
+
+PointLight {
+  attenuation 0 0 1
+  location 0 1 0
+}
+
+RectangleArena {
+  floorSize 1 1
+}
+
+E-puck {
+  controller "obstacle_avoidance"
+}
+
+WallObject {
+  translation 0.3 0 0
+  name "wall1"
+}
+
+WallObject {
+  translation -0.3 0 0
+  name "wall2"
+}
